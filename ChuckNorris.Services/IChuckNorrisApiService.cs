@@ -6,7 +6,7 @@ namespace ChuckNorris.Services
 {
     public interface IChuckNorrisApiService
     {
-        [Get]
+        [Get("/jokes/random")]
         Task<JokesResponse> GetJokesAsync();
     }
 }

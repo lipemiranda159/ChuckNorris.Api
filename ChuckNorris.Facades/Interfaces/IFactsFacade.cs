@@ -5,6 +5,6 @@ namespace ChuckNorris.Facades.Interfaces
 {
     public interface IFactsFacade
     {
-        Task<List<string>> GetFactsAsync();
+        Task<List<string>> GetFactsAsync(int count);
     }
 }

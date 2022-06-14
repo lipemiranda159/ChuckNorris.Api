@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ChuckNorris.Facades.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ChuckNorris.Api.Controllers
 {
@@ -6,20 +7,21 @@ namespace ChuckNorris.Api.Controllers
     [Route("[controller]")]
     public class chuckNorrisController : ControllerBase
     {
-        [HttpGet(Name = "get-facts")]
-        public IActionResult GET_FACTS(int count)
+        private readonly IFactsFacade _factsFacade;
+        public chuckNorrisController(IFactsFacade factsFacade)
         {
-            var jokeList = new List<string>();
+            _factsFacade = factsFacade;
+        }
 
-            for (int i = 0; i < count; i++)
-            {
-                var httpClient = new HttpClient();
-                dynamic result = httpClient.GetAsync("https://api.chucknorris.io/jokes/random").Result;
-
-                jokeList.Add(JokeHelper.GetJoke(result.value));
-            }
-
-            return this.Ok(jokeList);
+        /// <summary>
+        /// Get facts of api
+        /// </summary>
+        /// <param name="count">Number of facts that will be returned</param>
+        /// <returns></returns>
+        [HttpGet(Name = "get-facts")]
+        public async Task<IActionResult> GET_FACTS(int count)
+        {
+            return this.Ok(await _factsFacade.GetFactsAsync(count));
         }
     }
 }

@@ -1,9 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ChuckNorris.Facades.Interfaces;
+using ChuckNorris.Services;
+using Microsoft.Extensions.DependencyInjection;
+using RestEase;
 
 namespace ChuckNorris.Facades.Extensions
 {
@@ -11,6 +9,9 @@ namespace ChuckNorris.Facades.Extensions
     {
         public static void AddSingletons(this IServiceCollection services)
         {
+            var client = RestClient.For<IChuckNorrisApiService>("https://api.chucknorris.io");
+            services.AddSingleton(client);
+            services.AddSingleton<IFactsFacade, FactsFacade>();
 
         }
     }

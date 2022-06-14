@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31410.357
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckNorris.Api", "ChuckNorris.Api\ChuckNorris.Api.csproj", "{988FE53D-50E1-4CBA-9526-FFEC726F50A7}"
 EndProject
@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckNorris.Facades", "ChuckNorris.Facades\ChuckNorris.Facades.csproj", "{3B9E1903-EC2C-4C2D-AD16-7DF63D56698F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckNorris.Facades", "ChuckNorris.Facades\ChuckNorris.Facades.csproj", "{3B9E1903-EC2C-4C2D-AD16-7DF63D56698F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckNorris.Services", "ChuckNorris.Services\ChuckNorris.Services.csproj", "{CADDA5A8-66FA-47F2-85A4-674B79FE7D6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckNorris.Services", "ChuckNorris.Services\ChuckNorris.Services.csproj", "{CADDA5A8-66FA-47F2-85A4-674B79FE7D6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckNorris.Tests", "ChuckNorris.Tests\ChuckNorris.Tests.csproj", "{4B74CB30-C244-42D7-A6AC-ECF80EFEB33F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuckNorris.Models", "ChuckNorris.Models\ChuckNorris.Models.csproj", "{99FFFC26-4909-42FF-9021-6924B2377BA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckNorris.Models", "ChuckNorris.Models\ChuckNorris.Models.csproj", "{99FFFC26-4909-42FF-9021-6924B2377BA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckNorris.Test", "ChuckNorris.Test\ChuckNorris.Test.csproj", "{7B3B3CDE-8210-4F9C-9B7C-819C7A1E54E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +37,14 @@ Global
 		{CADDA5A8-66FA-47F2-85A4-674B79FE7D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CADDA5A8-66FA-47F2-85A4-674B79FE7D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CADDA5A8-66FA-47F2-85A4-674B79FE7D6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B74CB30-C244-42D7-A6AC-ECF80EFEB33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B74CB30-C244-42D7-A6AC-ECF80EFEB33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B74CB30-C244-42D7-A6AC-ECF80EFEB33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B74CB30-C244-42D7-A6AC-ECF80EFEB33F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{99FFFC26-4909-42FF-9021-6924B2377BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{99FFFC26-4909-42FF-9021-6924B2377BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99FFFC26-4909-42FF-9021-6924B2377BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99FFFC26-4909-42FF-9021-6924B2377BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3B3CDE-8210-4F9C-9B7C-819C7A1E54E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3B3CDE-8210-4F9C-9B7C-819C7A1E54E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3B3CDE-8210-4F9C-9B7C-819C7A1E54E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3B3CDE-8210-4F9C-9B7C-819C7A1E54E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

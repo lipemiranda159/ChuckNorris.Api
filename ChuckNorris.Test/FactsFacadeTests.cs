@@ -21,7 +21,7 @@ namespace ChuckNorris.Test
             var facts = await factsFacade.GetFactsAsync(1);
             Assert.Equal("CH. Norris can chuck more wood than a woodchuck could.", facts[0]);
         }
-        
+
         [Fact]
         public async Task GetFactsValidateCount()
         {
